@@ -263,6 +263,10 @@ section {
     border-radius: 8px;
     padding: 10px 16px;
     font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
 }
 
 .view-more-btn:hover {
@@ -277,6 +281,22 @@ section {
 
 .count.pending {
     color: var(--accent-2);
+}
+
+.project-actions {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.hosted-link {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #042f2e;
+}
+
+.hosted-link:hover {
+    color: #042f2e;
+    background: #5eead4;
 }
 
 .skills-list {
@@ -511,6 +531,15 @@ footer {
 
     .right img {
         height: 320px;
+    }
+
+    .status {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .project-actions {
+        flex-direction: row;
     }
 
     .footer-content {
